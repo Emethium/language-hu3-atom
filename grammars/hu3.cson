@@ -5,24 +5,34 @@
 ]
 'patterns': [
   {
-    'match': '[//].*$'
+    'begin': '//'
+    'end': '\\n'
     'name': 'comment.line'
+  }
+  {
+    'begin': '/\\*'
+    'end': '\\*/'
+    'name': 'comment.block'
   }
   {
     'match': '\\b(para|fimPara|escolha|caso|outros|fimEscolha|enquanto|fimEnquanto|se|senao|senaoSe|fimSe)\\b'
     'name': 'keyword.control.hu3'
   }
   {
-    'match': '\\b(numero|string)\\b'
-    'name': 'storage.type.hu3'
+    'match': '\\b(e|ou|nao)\\b'
+    'name': 'keyword.logic.hu3'
   }
   {
     'match': '\\b(exibe|leia)\\b'
     'name': 'keyword.function.hu3'
   }
   {
+    'match': '\\b(numero|string)\\b'
+    'name': 'storage.type.hu3'
+  }
+  {
     'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
     'name': 'constant.numeric.hu3'
   }
-  
+
 ]
