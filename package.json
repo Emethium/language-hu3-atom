@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "name": "language-lek",
+  "description": "Atom language support for Lek Language",
+  "homepage": "https://github.com/Emethium/language-lek-atom",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Emethium/language-lek-atom.git"
+  },
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/Emethium/language-lek-atom/issues"
+  },
+  "engines": {
+    "atom": "*"
+  },
+}
