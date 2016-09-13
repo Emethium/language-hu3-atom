@@ -1,4 +1,3 @@
-'scopeName': 'source.hu3'
 'name': 'HU3 Language'
 'filetypes': [
   'hu3'
@@ -8,6 +7,11 @@
     'begin': '//'
     'end': '\\n'
     'name': 'comment.line'
+  }
+  {
+    'begin': '^\\s*[\\#%]\\s*if\\s+0\\b'
+    'end': '^\\s*[\\#%]\\s*endif\\b'
+    'name': 'comment.preprocessor'
   }
   {
     'begin': '/\\*'
@@ -20,19 +24,33 @@
   }
   {
     'match': '\\b(e|ou|nao)\\b'
-    'name': 'keyword.logic.hu3'
+    'name': 'keyword.type.hu3'
   }
   {
     'match': '\\b(exibe|leia)\\b'
-    'name': 'keyword.function.hu3'
+    'name': 'keyword.other.special-method.hu3'
   }
   {
     'match': '\\b(numero|string)\\b'
-    'name': 'storage.type.hu3'
+    'name': 'keyword.data.hu3'
   }
   {
     'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
     'name': 'constant.numeric.hu3'
   }
+  {
+    'match': '[_][A-Za-z_0-9]*'
+    'name': 'keyword.variable.hu3'
+  }
+  {
+    'match': '(\\*|\\+|\\-|/)'
+    'name': 'keyword.operator.hu3'
+  }
+  {
+    'match': '==|!=|<=|>='
+    'name': 'keyword.operator.hu3'
+  }
+
 
 ]
+'scopeName': 'source.hu3'

@@ -1,0 +1,15 @@
+{
+  "name": "hu3-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A syntax theme for HU3, an experimental language for my compilers' class",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/hu3-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
